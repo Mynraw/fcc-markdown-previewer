@@ -13,6 +13,7 @@ const Editor = () => {
     <div className="flex-flex-col w-1/3 rounded-full">
       <TabLabel />
       <textarea
+        id="editor"
         className="bg-secondary w-full outline-none px-2"
         onChange={(e) => handleChange(e)}
       ></textarea>
