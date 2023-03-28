@@ -3,7 +3,7 @@ import Previewer from "@component/components/Previewer";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen bg-black text-white">
+    <div className="w-screen h-screen bg-black text-white grid place-items-center">
       <Editor />
       <Previewer />
     </div>
