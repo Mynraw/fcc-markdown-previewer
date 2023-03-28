@@ -6,7 +6,7 @@ const previewSlice = createSlice({
         text: "",
     },
     reducers: {
-        getPreview: (state: any, action: any) => {
+        getPreview: (state, action) => {
             state.text = action.payload;
         }
     }
