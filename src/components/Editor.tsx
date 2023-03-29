@@ -40,7 +40,7 @@ const Editor = () => {
       <textarea
         id="editor"
         className={`bg-secondary w-full outline-none px-2 ${
-          minMaxEditWindow ? "h-full" : "h-[300px]"
+          minMaxEditWindow ? "h-screen" : "h-[300px]"
         }`}
         onChange={(e) => handleChange(e)}
       ></textarea>

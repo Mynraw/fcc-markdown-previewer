@@ -34,7 +34,7 @@ const Previewer = () => {
           </div>
           <div
             className={`bg-secondary p-2 min-h-[200px] overflow-y-scroll ${
-              minMaxPrevWindow ? "h-full" : "h-[500px]"
+              minMaxPrevWindow ? "h-screen" : "h-[500px]"
             }`}
           >
             <Markdown gfm={true} langPrefix={"html"} value={previewContent} />
