@@ -4,17 +4,21 @@ const previewSlice = createSlice({
     name: "preview",
     initialState: {
         text: "",
-        tabMaxed: false,
+        prevTabMaxed: false,
+        editTabMaxed: false,
     },
     reducers: {
         getPreview: (state, action) => {
             state.text = action.payload;
         },
-        minMaxTab: (state) => {
-            state.tabMaxed = !state.tabMaxed;
+        minMaxPrevTab: (state) => {
+            state.prevTabMaxed = !state.prevTabMaxed;
+        },
+        minMaxEditTab: (state) => {
+            state.editTabMaxed = !state.editTabMaxed;
         }
     }
 });
 
-export const { getPreview, minMaxTab } = previewSlice.actions;
+export const { getPreview, minMaxPrevTab, minMaxEditTab} = previewSlice.actions;
 export default previewSlice.reducer;
